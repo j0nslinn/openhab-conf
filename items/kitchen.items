@@ -1,0 +1,3 @@
+String Kitchen_Amp "KITCHEN_AMP" { channel="broadlink:rm3:kitchenIR:command" }
+String Kitchen_Amp_Prev
+String Kitchen_Amp_State

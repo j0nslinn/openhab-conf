@@ -1,0 +1,44 @@
+rule "Turn on Amplifiers when Chromecast starts playing music"
+when
+    Item Kitchen_CC_AppId changed or Item LivingRm_CC_AppId changed
+then
+
+    logDebug("debug", "Checking Kitchen Chromecast")
+
+    if (Kitchen_CC_AppId.state == "2872939A" 
+    || Kitchen_CC_AppId.state == "705D30C6") {
+        logDebug("debug", "Kicthen Changed - Switching to CAST")
+        if (Kitchen_Amp.state != "KITCHEN_AMP_CAST") {
+            Kitchen_Amp.sendCommand("KITCHEN_AMP_CAST")
+        }
+
+    } else {
+        logDebug("debug", "switching back to PC")
+        Kitchen_Amp.sendCommand("KITCHEN_AMP_PC")
+        Kitchen_Amp_State.postUpdate("PC")
+    }
+
+    logDebug("debug", "Checking LivingRm Chromecast")
+    
+    if (LivingRm_CC_AppId.state == "705D30C6"
+    || LivingRm_CC_AppId.state == "2872939A" 
+    || LivingRm_CC_AppId.state == "531A4F84") {
+        logDebug("debug", "Living Rm Changed - Switching to CAST")
+        if (LivingRm_Amp_ZPower.state == OFF ) {
+            logDebug("debug","Switch on Amp")
+            LivingRm_Amp_ZPower.sendCommand(ON)
+        }
+        if (LivingRm_Amp_Input.state != "AV1") {
+            LivingRm_Amp_Input.sendCommand("AV1")
+            LivingRm_Amp_SurroundProgram.sendCommand("7ch Stereo")
+        }
+    } else {
+        logDebug("debug", "switching back to Previous State")
+        logDebug("debug", "previousState " + LivingRm_Amp_Input.previousState(true).state)
+        logDebug("debug", "previousState " + LivingRm_Amp_SurroundProgram.previousState(true).state)
+        LivingRm_Amp_Input.sendCommand(LivingRm_Amp_Input.previousState(true).state.toString)
+        LivingRm_Amp_SurroundProgram.sendCommand(LivingRm_Amp_SurroundProgram.previousState(true).state.toString)
+    }
+
+end
+

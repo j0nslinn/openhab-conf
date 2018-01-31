@@ -1,0 +1,3 @@
+Bridge yamahareceiver:yamahaAV:LivingRmAmp "Yamaha Receiver RX-V675" [HOST="192.168.2.12"] {
+	Thing zone LivingRmAmpZone "Main Zone" [ZONE="Main_Zone"]
+}

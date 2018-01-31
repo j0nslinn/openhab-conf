@@ -1,0 +1,43 @@
+//Living Room Kodi
+Dimmer   LivingRm_Kodi_Volume             "Volume"                {channel="kodi:kodi:livingRmKodi:volume"}
+Switch   LivingRm_Kodi_Mute               "Mute"                  {channel="kodi:kodi:livingRmKodi:mute"}
+Player   LivingRm_Kodi_Control            "Control"               {channel="kodi:kodi:livingRmKodi:control"}
+Switch   LivingRm_Kodi_Stop               "Stop"                  {channel="kodi:kodi:livingRmKodi:stop"}
+String   LivingRm_Kodi_Playuri            "Play URI"              {channel="kodi:kodi:livingRmKodi:playuri"}
+String   LivingRm_Kodi_PvrOpenTv          "Play PVR tv"           {channel="kodi:kodi:livingRmKodi:pvr-open-tv"}
+String   LivingRm_Kodi_PvrOpenRadio       "Play PVR radio"        {channel="kodi:kodi:livingRmKodi:pvr-open-radio"}
+String   LivingRm_Kodi_PvrChannel         "PVR channel title"     {channel="kodi:kodi:livingRmKodi:pvr-channel"}
+String   LivingRm_Kodi_Shownotification   "Show Notification"     {channel="kodi:kodi:livingRmKodi:shownotification"}
+String   LivingRm_Kodi_Input              "Send a key"            {channel="kodi:kodi:livingRmKodi:input"}
+String   LivingRm_Kodi_Inputtext          "Sends text as input"   {channel="kodi:kodi:livingRmKodi:inputtext"}
+String   LivingRm_Kodi_Inputaction        "Execute an action"     {channel="kodi:kodi:livingRmKodi:inputaction"}
+String   LivingRm_Kodi_Systemcommand      "Send system command"   {channel="kodi:kodi:livingRmKodi:systemcommand"}
+String   LivingRm_Kodi_Title              "Title"                 {channel="kodi:kodi:livingRmKodi:title"}
+String   LivingRm_Kodi_Showtitle          "Show Title"            {channel="kodi:kodi:livingRmKodi:showtitle"}
+String   LivingRm_Kodi_Album              "Album"                 {channel="kodi:kodi:livingRmKodi:album"}
+String   LivingRm_Kodi_Artist             "Artist"                {channel="kodi:kodi:livingRmKodi:artist"}
+String   LivingRm_Kodi_Mediatype          "Media Type"            {channel="kodi:kodi:livingRmKodi:mediatype"}
+Image    LivingRm_Kodi_Thumbnail          "Thumbnail"             {channel="kodi:kodi:livingRmKodi:thumbnail"}
+Image    LivingRm_Kodi_Fanart             "Fanart"                {channel="kodi:kodi:livingRmKodi:fanart"} 
+
+//Harry Kodi
+Dimmer   HarryRm_Kodi_Volume             "Volume"                {channel="kodi:kodi:harryRmKodi:volume"}
+Switch   HarryRm_Kodi_Mute               "Mute"                  {channel="kodi:kodi:harryRmKodi:mute"}
+Player   HarryRm_Kodi_Control            "Control"               {channel="kodi:kodi:harryRmKodi:control"}
+Switch   HarryRm_Kodi_Stop               "Stop"                  {channel="kodi:kodi:harryRmKodi:stop"}
+String   HarryRm_Kodi_Playuri            "Play URI"              {channel="kodi:kodi:harryRmKodi:playuri"}
+String   HarryRm_Kodi_PvrOpenTv          "Play PVR tv"           {channel="kodi:kodi:harryRmKodi:pvr-open-tv"}
+String   HarryRm_Kodi_PvrOpenRadio       "Play PVR radio"        {channel="kodi:kodi:harryRmKodi:pvr-open-radio"}
+String   HarryRm_Kodi_PvrChannel         "PVR channel title"     {channel="kodi:kodi:harryRmKodi:pvr-channel"}
+String   HarryRm_Kodi_Shownotification   "Show Notification"     {channel="kodi:kodi:harryRmKodi:shownotification"}
+String   HarryRm_Kodi_Input              "Send a key"            {channel="kodi:kodi:harryRmKodi:input"}
+String   HarryRm_Kodi_Inputtext          "Sends text as input"   {channel="kodi:kodi:harryRmKodi:inputtext"}
+String   HarryRm_Kodi_Inputaction        "Execute an action"     {channel="kodi:kodi:harryRmKodi:inputaction"}
+String   HarryRm_Kodi_Systemcommand      "Send system command"   {channel="kodi:kodi:harryRmKodi:systemcommand"}
+String   HarryRm_Kodi_Title              "Title"                 {channel="kodi:kodi:harryRmKodi:title"}
+String   HarryRm_Kodi_Showtitle          "Show Title"            {channel="kodi:kodi:harryRmKodi:showtitle"}
+String   HarryRm_Kodi_Album              "Album"                 {channel="kodi:kodi:harryRmKodi:album"}
+String   HarryRm_Kodi_Artist             "Artist"                {channel="kodi:kodi:harryRmKodi:artist"}
+String   HarryRm_Kodi_Mediatype          "Media Type"            {channel="kodi:kodi:harryRmKodi:mediatype"}
+Image    HarryRm_Kodi_Thumbnail          "Thumbnail"             {channel="kodi:kodi:harryRmKodi:thumbnail"}
+Image    HarryRm_Kodi_Fanart             "Fanart"                {channel="kodi:kodi:harryRmKodi:fanart"}

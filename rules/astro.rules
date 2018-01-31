@@ -1,0 +1,13 @@
+import org.eclipse.smarthome.core.library.types.DecimalType
+import org.eclipse.smarthome.core.library.types.PercentType
+
+rule "Sunset Start Trigger"
+when
+    Channel 'astro:sun:home:set#event' triggered START 
+then
+    var hue = new DecimalType(0) // 0-360; 0=red, 120=green, 240=blue, 360=red(again)
+	var sat = new PercentType(0)
+	var bright = new PercentType(92)
+    gLivingRm_LampsColour.sendCommand(new HSBType(hue, sat, bright).toString)
+    LivingRmMainLights.sendCommand(50)
+end

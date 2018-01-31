@@ -1,0 +1,40 @@
+import org.eclipse.smarthome.core.library.types.DecimalType
+import org.eclipse.smarthome.core.library.types.PercentType
+
+rule "my scenes switch"
+when
+    Item myScenes changed
+then
+    switch (myScenes.state.toString) {
+        case "0": { //Movies
+			var hue = new DecimalType(43) // 0-360; 0=red, 120=green, 240=blue, 360=red(again)
+			var sat = new PercentType(55)
+			var bright = new PercentType(100)
+            //gLivingLampsColour.sendCommand(new HSBType(hue, sat, bright).toString)
+            gLampColour.sendCommand(new HSBType(hue, sat, bright).toString)
+            LivingRmDiningLights.sendCommand(0)
+            LivingRmMainLights.sendCommand(0)
+            HallLights.sendCommand(1)
+            logInfo("myScenes","Movies fired")
+        }
+        case "1": { //Bed
+            gAll.sendCommand(0)
+            logInfo("myScenes","Bed fired")
+        }
+        case "2": { //Evening LivingRM
+            var hue = new DecimalType(0) // 0-360; 0=red, 120=green, 240=blue, 360=red(again)
+			var sat = new PercentType(0)
+			var bright = new PercentType(92)
+            //gLivingLampsColour.sendCommand(new HSBType(hue, sat, bright).toString)
+            gLampColor.sendCommand(new HSBType(hue, sat, bright).toString)
+            LivingRmDiningLights.sendCommand(0)
+            LivingRmMainLights.sendCommand(1)
+            HallLights.sendCommand(1)
+            logInfo("myScenes","Evening fired")
+        }
+        default: { 
+            logInfo("myScenes","incorrect state: {}",myScenes.state)
+        }
+    }
+end
+

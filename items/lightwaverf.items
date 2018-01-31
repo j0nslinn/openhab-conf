@@ -1,0 +1,16 @@
+Group:Dimmer gKitchen
+Group:Dimmer gAll
+
+Dimmer  LivingRmMainLights "Living Room [%d %%]" (gAll) { lightwaverf="room=1,device=2,type=DIMMER",autoupdate="true" }
+Dimmer  LivingRmDiningLights "Dining [%d %%]" (gAll) { lightwaverf="room=1,device=1,type=DIMMER" }
+Dimmer  HallLights "Hall [%d %%]" (gAll) { lightwaverf="room=1,device=3,type=DIMMER" }
+
+
+Dimmer  KitchenCounter "Kitchen Counter [%d %%]" (gAll, gKitchen) { lightwaverf="room=1,device=5,type=DIMMER",autoupdate="true" }
+Dimmer  KitchenOne "Kitchen One[%d %%]" (gAll, gKitchen) { lightwaverf="room=1,device=6,type=DIMMER",autoupdate="true" }
+Dimmer  KitchenTwo "Kitchen Two [%d %%]" (gAll, gKitchen) { lightwaverf="room=1,device=7,type=DIMMER",autoupdate="true" }
+
+Switch  SubWoofer "SubWoofer" (ALL)         { lightwaverf="room=1,device=4,type=SWITCH" }
+
+Number Energy_Current {	lightwaverf="serial=7D91FE,type=ENERGY_CURRENT_USAGE"}
+Number Energy_Today { lightwaverf="serial=7D91FE, type=ENERGY_TODAY_USAGE"}

@@ -1,0 +1,9 @@
+Group:Color gLivingRm_LampsColour
+
+Color   LivingRm_SmallLamp_Colour    "Color"     (gLivingRm_LampsColour)  { channel="tplinksmarthome:lb130:smalllamp:color" }
+Color   LivingRm_TallLamp_Colour     "Color"     (gLivingRm_LampsColour)  { channel="tplinksmarthome:lb130:talllamp:color" }
+
+Number  LivingRm_SmallLamp_Signal1     "Signal [%d] dB"            { channel="tplinksmarthome:lb130:smalllamp:rssi"}    
+Number  LivingRm_TallLamp_Signal1      "Signal [%d] dB"            { channel="tplinksmarthome:lb130:talllamp:rssi"}     
+
+

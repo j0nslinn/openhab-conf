@@ -1,0 +1,2 @@
+Thing tplinksmarthome:lb130:smalllamp "Small Lamp" [ ipAddress="192.168.2.41", refresh=20, transitionPeriod=2500 ]
+Thing tplinksmarthome:lb130:talllamp "Tall Lamp" [ ipAddress="192.168.2.42", refresh=20, transitionPeriod=2500 ]

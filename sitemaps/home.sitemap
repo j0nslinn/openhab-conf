@@ -1,0 +1,6 @@
+sitemap  home label="my Home" {
+    Frame {
+        Switch item=myScenes mappings=[0="Movie Night",1="All Off",2="Evening"]
+
+    }
+}

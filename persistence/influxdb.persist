@@ -1,0 +1,9 @@
+Strategies {
+    everyMinute : "0 * * * * ?"
+    everyHour   : "0 0 * * * ?"
+    everyDay    : "0 0 0 * * ?"
+}
+
+Items {
+    LivingRmMainLights, LivingRm_Amp_Input, LivingRm_Amp_SurroundProgram, gLivingRm_LampsColour          : strategy = everyChange, everyMinute
+}

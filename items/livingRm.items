@@ -1,0 +1,25 @@
+// TV
+Dimmer   LivingRm_SamsungTV_Volume             "Volume"              {channel="samsungtv:tv:livingroom:volume"}
+Switch   LivingRm_SamsungTV_Mute               "Mute"                {channel="samsungtv:tv:livingroom:mute"}
+Dimmer   LivingRm_SamsungTV_Brightness         "Brightness"          {channel="samsungtv:tv:livingroom:brightness"}
+Dimmer   LivingRm_SamsungTV_Contrast           "Contrast"            {channel="samsungtv:tv:livingroom:contrast"}
+Dimmer   LivingRm_SamsungTV_Sharpness          "Sharpness"           {channel="samsungtv:tv:livingroom:sharpness"}
+Number   LivingRm_SamsungTV_ColorTemperature   "Color Temperature"   {channel="samsungtv:tv:livingroom:colorTemperature"}
+String   LivingRm_SamsungTV_SourceName         "Source Name"         {channel="samsungtv:tv:livingroom:sourceName"}
+Number   LivingRm_SamsungTV_SourceId           "Source ID"           {channel="samsungtv:tv:livingroom:sourceId"}
+Number   LivingRm_SamsungTV_Channel            "Channel"             {channel="samsungtv:tv:livingroom:channel"}
+String   LivingRm_SamsungTV_ProgramTitle       "Program Title"       {channel="samsungtv:tv:livingroom:programTitle"}
+String   LivingRm_SamsungTV_ChannelName        "Channel Name"        {channel="samsungtv:tv:livingroom:channelName"}
+String   LivingRm_SamsungTV_Url                "Browser URL"         {channel="samsungtv:tv:livingroom:url"}
+Switch   LivingRm_SamsungTV_StopBrowser        "Stop Browser"        {channel="samsungtv:tv:livingroom:stopBrowser"}
+String   LivingRm_SamsungTV_KeyCode            "Key Code"            {channel="samsungtv:tv:livingroom:keyCode"}
+Switch   LivingRm_SamsungTV_Power              "Power"               {channel="samsungtv:tv:livingroom:power"}
+
+// Amp
+Switch   LivingRm_Amp_ZPower                         "Zone channels power"                          {channel="yamahareceiver:zone:LivingRmAmp:LivingRmAmpZone:zone_channels#power"}
+String   LivingRm_Amp_SurroundProgram               "Zone channels surround program"                {channel="yamahareceiver:zone:LivingRmAmp:LivingRmAmpZone:zone_channels#surroundProgram"}
+Dimmer   LivingRm_Amp_Volume                        "Zone channels volume"                          {channel="yamahareceiver:zone:LivingRmAmp:LivingRmAmpZone:zone_channels#volume"}
+Number   LivingRm_Amp_VolumeDB                      "Zone channels volume db"                       {channel="yamahareceiver:zone:LivingRmAmp:LivingRmAmpZone:zone_channels#volumeDB"}
+Switch   LivingRm_Amp_Mute                          "Zone channels mute"                            {channel="yamahareceiver:zone:LivingRmAmp:LivingRmAmpZone:zone_channels#mute"}
+String   LivingRm_Amp_Input                         "Zone channels input"                           {channel="yamahareceiver:zone:LivingRmAmp:LivingRmAmpZone:zone_channels#input"}
+String   LivingRm_Amp_PrevInput
