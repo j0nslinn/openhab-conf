@@ -5,5 +5,5 @@ Strategies {
 }
 
 Items {
-    LivingRmMainLights, LivingRm_Amp_Input, LivingRm_Amp_SurroundProgram, gLivingRm_LampsColour          : strategy = everyChange, everyMinute
+    * : strategy = everyChange, everyMinute
 }
