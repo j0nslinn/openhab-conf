@@ -37,8 +37,7 @@ then
         logDebug("debug", "previousState " + LivingRm_Amp_Input.previousState(true).state)
         logDebug("debug", "previousState " + LivingRm_Amp_SurroundProgram.previousState(true).state)
         LivingRm_Amp_Input.sendCommand(LivingRm_Amp_Input.previousState(true).state.toString)
-
-        //LivingRm_Amp_SurroundProgram.sendCommand(LivingRm_Amp_SurroundProgram.previousState(true).state.toString)
+        LivingRm_Amp_SurroundProgram.sendCommand(LivingRm_Amp_SurroundProgram.previousState(true).state.toString)
     }
 
 end
