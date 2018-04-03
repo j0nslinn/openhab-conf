@@ -1,4 +1,6 @@
 //Living Room Kodi
+String LivingRm_WatchingMovie
+
 Dimmer   LivingRm_Kodi_Volume             "Volume"                {channel="kodi:kodi:livingRmKodi:volume"}
 Switch   LivingRm_Kodi_Mute               "Mute"                  {channel="kodi:kodi:livingRmKodi:mute"}
 Player   LivingRm_Kodi_Control            "Control"               {channel="kodi:kodi:livingRmKodi:control"}
@@ -21,6 +23,9 @@ Image    LivingRm_Kodi_Thumbnail          "Thumbnail"             {channel="kodi
 Image    LivingRm_Kodi_Fanart             "Fanart"                {channel="kodi:kodi:livingRmKodi:fanart"} 
 
 //Harry Kodi
+String HarryRm_WatchingMovie
+
+
 Dimmer   HarryRm_Kodi_Volume             "Volume"                {channel="kodi:kodi:harryRmKodi:volume"}
 Switch   HarryRm_Kodi_Mute               "Mute"                  {channel="kodi:kodi:harryRmKodi:mute"}
 Player   HarryRm_Kodi_Control            "Control"               {channel="kodi:kodi:harryRmKodi:control"}
