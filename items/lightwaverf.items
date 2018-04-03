@@ -12,5 +12,5 @@ Dimmer  KitchenTwo "Kitchen Two [%d %%]" (gAll, gKitchen) { lightwaverf="room=1,
 
 Switch  SubWoofer "SubWoofer" (ALL)         { lightwaverf="room=1,device=4,type=SWITCH" }
 
-Number Energy_Current {	lightwaverf="serial=7D91FE,type=ENERGY_CURRENT_USAGE"}
-Number Energy_Today { lightwaverf="serial=7D91FE, type=ENERGY_TODAY_USAGE"}
+Number Home_Energy_Current {	lightwaverf="serial=7D91FE,type=ENERGY_CURRENT_USAGE"}
+Number Home_Energy_Today { lightwaverf="serial=7D91FE, type=ENERGY_TODAY_USAGE"}
