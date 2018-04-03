@@ -1,0 +1,7 @@
+Number internetTrafficIn { http="<[http://192.168.2.15/api/table.json?content=channels&output=json&columns=name,lastvalue_&id=2356&username=sh-admin&passhash=3733340651:5000:JSONPATH(channels[1].lastvalue_raw)]" }
+Number internetTrafficOut { http="<[http://192.168.2.15/api/table.json?content=channels&output=json&columns=name,lastvalue_&id=2356&username=sh-admin&passhash=3733340651:5000:JSONPATH(channels[2].lastvalue_raw)]" }
+Number internetTrafficTotal { http="<[http://192.168.2.15/api/table.json?content=channels&output=json&columns=name,lastvalue_&id=2356&username=sh-admin&passhash=3733340651:5000:JSONPATH(channels[3].lastvalue_raw)]" }
+
+Number Playroom_TrafficIn { http="<[http://192.168.2.15/api/table.json?content=channels&output=json&columns=name,lastvalue_&id=2344&username=sh-admin&passhash=3733340651:5000:JSONPATH(channels[1].lastvalue_raw)]" }
+Number Playroom_TrafficOut { http="<[http://192.168.2.15/api/table.json?content=channels&output=json&columns=name,lastvalue_&id=2344&username=sh-admin&passhash=3733340651:5000:JSONPATH(channels[2].lastvalue_raw)]" }
+Number Playroom_TrafficTotal { http="<[http://192.168.2.15/api/table.json?content=channels&output=json&columns=name,lastvalue_&id=2344&username=sh-admin&passhash=3733340651:5000:JSONPATH(channels[3].lastvalue_raw)]" }

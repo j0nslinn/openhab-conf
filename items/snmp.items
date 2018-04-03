@@ -1,0 +1,9 @@
+Number linespeedUp  { snmp="<[192.168.2.4:public:.1.3.6.1.2.1.10.97.1.1.2.1.10.2:5000]" }
+Number linespeedDn  { snmp="<[192.168.2.4:public:.1.3.6.1.2.1.10.97.1.1.2.1.10.1:5000]" }
+
+Number snrMarginUp  { snmp="<[192.168.2.4:public:.1.3.6.1.2.1.10.97.1.1.2.1.5.2:5000]" }
+Number snrMarginDn  { snmp="<[192.168.2.4:public:.1.3.6.1.2.1.10.97.1.1.2.1.5.1:5000]" }
+
+Number lineAttenUp  { snmp="<[192.168.2.4:public:.1.3.6.1.2.1.10.97.1.1.2.1.6.2:5000]" }
+Number lineAttenDn  { snmp="<[192.168.2.4:public:.1.3.6.1.2.1.10.97.1.1.2.1.6.1:5000]" }
+

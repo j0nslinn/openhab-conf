@@ -1,0 +1,5 @@
+Number Storage0Total "Storage total" {channel="systeminfo:computer:kitchen:storage0#total"}
+Number Storage1Total "Storage total" {channel="systeminfo:computer:kitchen:storage1#total"}
+Number Storage2Total "Storage total" {channel="systeminfo:computer:kitchen:storage2#total"}
+
+Number StorageAvailable "Storage available" {channel="systeminfo:computer:kitchen:storage3#available"}
